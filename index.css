@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 #header{
+    
     color: white;
     background-color: black;
-    padding: 15%;
+    padding: 5%;
+}
+header nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 header nav ul li a{
-    width: 200px;
-  height: 150px;
+    width: 5%;
+  height: 15%;
 }
 
 main a button {
-    background-color: grey; /* Color inicial del botón */
+    background-color: rgb(119, 24, 214); 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -22,4 +28,11 @@ main a button {
 }
 main a button:hover {
     background-color: blue;
+}
+
+footer{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+    list-style: none;
 }
