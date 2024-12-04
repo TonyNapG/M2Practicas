@@ -41,6 +41,7 @@ header nav ul {
     font-size: 12px; 
     margin-left: 5px; 
   }
+ 
 
 main {
     background-color: rgb(0, 115, 255);
@@ -51,33 +52,76 @@ main {
     justify-content: center;
     flex-direction: column; 
 }
-
-main div img {
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+#logo img{
     width: 100%;
-
 }
 
-main a button {
+.prueba{
+    width: 100%;
+    height: 100vh;
+    font-size: larger;
+    gap: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -220px;
+    z-index: 2;
+}
+.prueba img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.prueba a button {
     background-color: rgb(119, 24, 214); 
+    font-size: larger;
     color: white;
-    padding: 10px 20px;
+    padding: 40px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer
 }
-main a button:hover {
+.prueba a button:hover {
     background-color: blue;
 }
 
+#cartel img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+#cartel{
+    margin-top: -270px;
+}
+
+
 #Infobands {
-    background-color: #fff;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 20px ;
-    border: 3px solid black;
     gap: 20px;
+    padding: 10px;
+}
+#Infobands article{
+    border: 3px solid black;
+}
+#Infobands h2{
+display: flex;
+justify-content: center;
+}
+#Infobands img {
+    width: 400px;
+    height: 350px;
 }
 
 
