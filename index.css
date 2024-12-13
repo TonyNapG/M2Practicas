@@ -80,6 +80,7 @@ main {
 }
 #logo img{
     width: 100%;
+    align-items: center;
 }
 
 .prueba{
@@ -121,6 +122,7 @@ main {
 }
 #cartel{
     margin-top: -270px;
+    width: 100%;
 }
 
 
@@ -142,7 +144,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgb(51, 129, 239);
-    min-height: 500px;
+    
 }
 
 #Infobands article div img {
@@ -221,13 +223,118 @@ footer{
     background-color: #45a049; 
   }
 
+/* responsive section */
 
   @media (max-width: 600px) {
-    body {
-      font-size: 16px; 
+    .list li:not(:last-child) {
+        display: none;
     }
-    .navbar {
-      flex-direction: column; 
-      align-items: center;
+    .navbar a{
+        padding-left: 30px;
+    }
+    .navbar a:nth-child(1) {
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .prueba{
+        font-size: small;
+        padding: none;
+    }
+    .prueba h2 {
+        width: 50%;
+        text-align: center;
+    }
+
+    .prueba a button {
+        background-color: rgb(55, 91, 148); 
+        font-size: small;
+        color: white;
+        padding: 10px ;
+        border: none;
+        border-radius: 20px; 
+        cursor: pointer
+    }
+    .prueba a button:hover {
+        background-color: rgb(124, 124, 213);
+        transition: 0.3s;
+    }
+    #cartel{
+        margin-top: -225px;
+    }
+    #Infobands {
+        flex-direction: column;
+        margin: 1px ;
+        width: 100%;
+    }
+    #Infobands article{
+        width: 100%;
+    }
+  } 
+
+  @media (min-width: 600px) and (max-width: 1023px) {
+    .prueba{
+        margin-top: -350px;
+    }
+    .prueba h2 {
+        width: 40%;
+        text-align: center;
+    } 
+
+    .prueba a button {
+        background-color: rgb(55, 91, 148); 
+        font-size: xx-large;
+        color: white;
+        padding: 30px ;
+        border: none;
+        border-radius: 20px; 
+        cursor: pointer
+    }
+    .prueba a button:hover {
+        background-color: rgb(124, 124, 213);
+        transition: 0.3s;
+    }
+    #cartel{
+        margin-top: -350px;
+    }
+    #Infobands {
+        flex-direction: column;
+        margin: 1px ;
+        width: 100%;
+    }
+    #Infobands article{
+        width: 90%;
+    }
+    #Infobands article p{
+        font-size: x-large;
     }
   }
+
+
+   @media (min-width: 1024px)  {
+    .list {
+        font-size: x-large;
+    }
+    #logo {
+        padding: 40px;
+    }
+    .prueba h1{
+        font-size: 50px;
+        padding-top: 60px;
+    }
+    .prueba h2 {
+        width: 50%;
+        text-align: center;
+        font-size: 35px ;
+    }
+    .prueba a button {
+        padding: 50px;
+        background-color: rgb(55, 91, 148); 
+    }
+
+    #cartel{
+        padding-top: 150px;
+    }
+
+
+  } 
